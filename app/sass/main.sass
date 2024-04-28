@@ -1,0 +1,193 @@
+@import '../../node_modules/bootstrap/scss/bootstrap'
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims"
+
+.fa,.fas,.far,.fal,.fab
+  font-family: "Font Awesome 5 Free", serif
+
+body
+  font-family: "Jost", sans-serif
+  font-size: 18px
+  .container-fluid, .container
+    padding-right: 0
+    padding-left: 0
+
+$base-color: #85cded
+$footer-color: #717171
+
+.header-block
+  display: flex
+  justify-content: space-between
+  margin-top: 50px
+  &__name
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    h1
+      border-top: 20px solid $base-color
+      border-bottom: 20px solid $base-color
+      margin: 0
+      padding: 10px 0
+    &-links
+      margin-top: 10px
+      ul
+        display: flex
+        padding: 0
+        margin: 0
+        li
+          list-style: none
+          padding: 0 10px
+          &:first-child
+            padding-left: 0
+          a
+            text-decoration: none
+            color: #000
+    &-description
+      h3
+        font-size: 40px
+        margin: 0
+        border-bottom: 1px solid $base-color
+        padding-bottom: 10px
+        text-transform: uppercase
+      p
+        width: 500px
+        margin: 0
+        padding-top: 10px
+  &__avatar
+    width: 450px
+    height: 725px
+    img
+      width: 100%
+      height: 100%
+      object-position: 60% 25%
+      object-fit: none
+.header-block__about
+  margin-top: 35px
+  h3
+    margin: 0
+    font-size: 35px
+  &-description
+    width: 700px
+    margin: 0
+    padding: 15px 0
+    border-bottom: 20px solid $base-color
+  &-blocks
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+
+.main-block__connect
+  background: $base-color
+  margin-top: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 70px 0
+  &-text
+    width: 700px
+    color: #000
+    h3
+      margin: 0
+      font-size: 35px
+    p
+      margin: 0
+      padding: 35px 0
+.main-block__services
+  margin-top: 100px
+  &-block
+    display: flex
+    align-items: center
+  &-header
+    h3
+      margin: 0
+      text-transform: uppercase
+      font-size: 40px
+    p
+      color: $base-color
+      font-style: italic
+      font-size: 20px
+  &-boxes
+    margin-top: 50px
+  &-box
+    display: flex
+  &-icon
+    width: 200px
+    height: 100px
+    img
+      width: 100%
+  &-box-description
+    padding: 0 30px
+    h3
+      font-size: 20px
+      margin: 0
+      text-transform: uppercase
+      height: 35px
+.main-block__contact
+  background: $base-color
+  margin-top: 100px
+  padding: 50px 0
+  &-boxes
+    display: flex
+    justify-content: space-between
+  &-box
+    color: #000
+    text-align: center
+    a
+      text-decoration: none
+      color: #000
+    h3
+      margin: 0
+      text-transform: uppercase
+      font-size: 20px
+    p
+      margin: 0
+  &-icon
+    margin-bottom: 20px
+.main-block__information
+  display: flex
+  justify-content: space-between
+  margin-top: 50px
+  &-description
+    display: flex
+    flex-direction: column
+    h3
+      font-size: 35px
+      margin-bottom: 15px
+    p
+      width: 500px
+      margin: 0
+  &-avatar
+    width: 300px
+    height: 300px
+    margin-top: 50px
+    img
+      width: 100%
+      height: 100%
+      display: flex
+      border-radius: 50%
+      object-fit: cover
+  &-form
+    width: 600px
+    input, textarea
+      background: transparent
+      border: none
+      border-bottom: 1px solid #fff
+      border-radius: 0
+      &:focus
+        background: transparent
+        border: none
+        border-bottom: 1px solid #fff
+        border-radius: 0
+        box-shadow: none
+    button
+      width: 100%
+
+.footer-block
+  background: $footer-color
+  padding: 10px
+  p
+    color: #ffffff
+    margin: 0
